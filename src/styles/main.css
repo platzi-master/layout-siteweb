@@ -114,3 +114,29 @@ body {
   padding: 0;
   text-align: right;
 }
+
+@media screen and (min-width: 375px) {
+  .Hero-image img {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+  }
+  .Hero-image h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .Hero-image p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .Hero-image span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+  }
+}
