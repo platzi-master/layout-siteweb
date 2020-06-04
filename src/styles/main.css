@@ -27,12 +27,12 @@ body {
   top: 0;
   color: #f1f1f1;
   width: 100%;
-  background-image: linear-gradient(to bottom right, rgba(0, 7, 75, .6), rgba(0,0,0,.6));
+  background-image: linear-gradient(to bottom right, rgba(0,47,75,.4), rgba(0,0,0,.4));
 }
 
 .Hero-container {
   display: grid;
-  grid-template-columns: minmax(auto, 1280px);
+  grid-template-columns: minmax(auto,1280px);
   justify-content: center;
   align-items: center;
 }
@@ -49,7 +49,7 @@ body {
 .Hero-logo h3 {
   font-size: 28px;
   margin: 0;
-  padding: 1em 0;
+  padding: 0;
 }
 
 .Hero-nav ul {
@@ -67,6 +67,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8em 0 0 0;
 }
 
 .Hero-title {
@@ -75,7 +76,7 @@ body {
 
 .Hero-title h1 {
   font-size: 400px;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255,255,255,0.2);
   margin: 0;
   padding: 0;
 }
@@ -103,6 +104,12 @@ body {
   border-radius: 5px;
   letter-spacing: 1.5px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+  transition: .5s
+}
+
+.Hero-title .btn:hover {
+  background-color: rgba(0,47,75,.2);
+  color: rgba(255,255,255,0.8)
 }
 
 .Hero-title a {
@@ -113,4 +120,31 @@ body {
   margin: 0;
   padding: 0;
   text-align: right;
+}
+
+.Hero-image img {
+  margin: 4em 0 0 0;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#universe {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
 }
